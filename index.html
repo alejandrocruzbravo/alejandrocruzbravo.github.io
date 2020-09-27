@@ -1,11 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV_Alejandro_Cruz</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Pagina de Alejandro Cruz Bravo</title>
 </head>
-<body>
-    <h1>CURRICULUM VITAE DE ALEJANDRO CRUZ</h1>
+
+<body id="background">
+    <script>
+        function alerta(){
+            alert("Este programa PHP requiere de un interprete de PHP para su correcto funcionamiento por lo que es imposible su ejecución.")
+        }
+    </script>
+
+    <div id="banner" align="center">
+        <br>
+        <br>
+        <br>
+        <p id="title"><b>CURRICULUM VITAE</b></p>
+        <br>
+        <br>
+    </div>
+    <div class="fixed-top">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <h5 class="text-white h4">MENÚ DE NAVEGACIÓN</h5>
+            <span class="text-muted">
+                <ul class="menu">
+                    <li><a href="#seccion1" class="menulink">INTRODUCCIÓN</a></li>
+                    <li><a href="#seccion2" class="menulink">ESTUDIOS</a></li>
+                    <li><a href="#seccion3" class="menulink">LOGROS</a></li>
+                    <li><a href="#seccion4" class="menulink">CARPETA DE EVIDENCIAS</a></li>
+                    <li><a href="docs/CURRICULUM VITAE.pdf" download="CV-Alejandro Cruz Bravo.pdf" class="menulink">DESCARGAR CURRICULUM</a></li>
+                </ul>
+            </span>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </div>
+    <div id="datos">
+        <img align="left" id="perfil" src="img/portada1.jpg" width="150px" height="190px">
+        <h1 align="center"><b>DATOS GENERALES</b></h1>
+        <h4 align="center">
+
+            NOMBRE: ALEJANDRO CRUZ BRAVO <br>
+            EDAD: 17 AÑOS <br>
+            NACIONALIDAD: MEXICANA <br>
+            TELEFONO: +52 983 102 1053 <br>
+            CORREO ELECTRONICO: Cruz_Bravo_A@hotmail.com <br>
+        </h4>
+    </div>
+    <section id="seccion1">
+        <div class="style1">
+            <h2 align=center>INTRODUCCIÓN</h2>
+            <p align=center>
+                “Estudiante de preparatoria en la especialidad de programación (4to semestre). <br>
+                Soy una persona creativa y muy analítica en distintas situaciones, me gusta crear<br>
+                y gestionar contenido de diversas formas, me gusta leer todo tema relacionado con <br>
+                la tecnología. Le gusta trabajar en un ambiente en donde todos colaboren<br>
+                Y conozcan respecto a lo que hacen, sea cual sea su especialidad.<br>
+                De igual modo, me gusta formar parte de un ambiente laboral creativo<br>
+                En donde las ideas propuestas para realizar un trabajo sean completamente<br>
+                Originales y con esto, darle al producto un toque de creatividad y originalidad.”
+            </p>
+        </div>
+    </section>
+    <section id="seccion2">
+        <div class="style2">
+            <h2 align="center"><img src="img/graduation.png" width="50px" height="50px">ESTUDIOS</h2>
+            <p> - Nivel Medio – Superior </p>
+            <ul>
+                <li> Centro de Bachillerato Tecnológico Industria y de Servicios No.253</li>
+            </ul>
+            <hr>
+            <p> - Actividades Extras </p>
+            <ul>
+                <li>Curso de fundamentos básicos en robótica y electrónica</li>
+                <li>Curso de fundamentos básicos en informática</li>
+                <li>Curso de informática avanzada</li>
+                <li>Curso de fundamentos básicos en HTML/HTML5</li>
+                <li>Curso de fundamentos básicos en PHP</li>
+            </ul>
+            <hr>
+            <p> - Lenguajes de programación dominados y tecnologías</p>
+            <ul>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>C#</li>
+                <li>SQL</li>
+                <li>CSS</li>
+            </ul>
+        </div>
+    </section>
+    <section id="seccion3">
+        <div class="style4">
+            <h2 align="center"><img src="img/icon.png" width="50px" height="50px">LOGROS</h2>
+            <p>A lo largo de mi camino academico e logrado conseguir distintos <br>
+                Logros y reconocimientos los cuales me he propuesto conseguir<br>
+                Y con esfuerzo y dedicación lo he logrado.
+            </p>
+            <ul>
+                <li>Reconocimiento de curso básico en robótica y electrónica</li>
+                <li>Certificado en fundamentos básicos en HTML/HTML5 </li>
+                <li>Certificado en fundamentos básicos en PHP </li>
+            </ul>
+        </div>
+    </section>
+    <section id="seccion4">
+        <div class="style3">
+            <h2 align="center"><img src="img/folder.png" width="50px" height="50px">CARPETA DE EVIDENCIAS</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/formula.png" class="card-img-top" alt="calculadora">
+                            <div class="card-body">
+                                <form action="php/conversiones.php" method="POST">
+                                    <h5>CONVERSIONES DE LONGITUD</h5>
+                                    <p class="card-text">Calculadora de conversiones de longitud (Unidades básicas).</p>
+                                    INGRESE LOS METROS <input type="text" name="metros" placeholder="0"
+                                        class="cajas"><br>
+                                    <input type="button" onclick="alerta()" value="Calcular"><br>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/bootstrap4.PNG" class="card-img-top" alt="Bootstrap4">
+                            <div class="card-body">
+                                <h5 class="card-title">PRUEBA DE COMPONENTES BOOTSTRAP4</h5>
+                                <p class="card-text">En está página se muestran algunos de los componentes básicos del
+                                    framework Bootstrap4.</p>
+                                <a href="prueba/index.html" class="btn btn-primary">ACCEDER</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/grid.jpg" class="card-img-top" alt="Bootstrap4">
+                            <div class="card-body">
+                                <h5 class="card-title">GRID SYSTEM Y OFFSET</h5>
+                                <p class="card-text">En está página mostraremos el comportamiento del Grid System de
+                                    Bootstra4 y el posicionamiento OFFSETS</p>
+                                <a href="Grid/index.html" class="btn btn-primary">ACCEDER</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/gym.jpg" class="card-img-top" alt="master gym">
+                        <div class="card-body">
+                            <h5 class="card-title">SISTEMA PHP DE UN GIMNASIO</h5>
+                            <p class="card-text">Sistema programado en PHP entorno a la gestión de un gimnasio.</p>
+                            <input type="button" onclick="alerta()" value="ACCEDER" class="btn btn-primary"><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
